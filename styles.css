@@ -172,7 +172,6 @@ h2 {
   color: var(--muted);
 }
 
-.areas,
 .contact,
 .latest-post {
   border: 1px solid var(--line);
@@ -181,7 +180,6 @@ h2 {
   background: rgba(13, 18, 27, 0.8);
 }
 
-.areas p,
 .latest-post p,
 .latest-post small,
 .contact p,
@@ -189,7 +187,6 @@ h2 {
   color: var(--muted);
 }
 
-.area-list,
 .why {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
