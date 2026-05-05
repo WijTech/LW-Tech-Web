@@ -193,6 +193,26 @@ h2 {
   background: rgba(13, 18, 27, 0.8);
 }
 
+.latest-post {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.2rem;
+  background: rgba(13, 18, 27, 0.8);
+}
+
+.latest-post p,
+.latest-post small {
+  color: var(--muted);
+}
+
+.post-frame {
+  margin-top: 1rem;
+  border: 1px solid #2a364a;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0d1117;
+}
+
 .contact p,
 .contact small {
   color: var(--muted);
