@@ -220,6 +220,10 @@ h2 {
   background: #0a121f;
 }
 
+.fb-embed iframe {
+  display: block;
+}
+
 .facebook-layout {
   display: grid;
   grid-template-columns: 1.5fr 0.9fr;
