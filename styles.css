@@ -83,11 +83,22 @@ h1 {
   margin: 0.8rem 0;
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2rem, 4.6vw, 3.4rem);
-  line-height: 1.05;
-  max-width: 17ch;
+  line-height: 1.02;
+  max-width: 21ch;
 }
 
-.lead { color: var(--muted); margin-top: 0; }
+.lead {
+  color: var(--muted);
+  margin-top: 0;
+  max-width: 72ch;
+}
+
+.hero-balance {
+  margin-top: 0.4rem;
+  width: min(520px, 85%);
+  height: 2px;
+  background: linear-gradient(90deg, rgba(220, 230, 246, 0.9), rgba(220, 230, 246, 0.05));
+}
 
 .service-icons {
   display: grid;
@@ -182,15 +193,19 @@ h2 {
   padding: 0.9rem;
 }
 
-.help-grid h3 { margin-top: 0; }
+.help-grid h3 {
+  margin-top: 0;
+  color: #eef3fc;
+}
 
 .help-grid ul {
   margin: 0;
   padding-left: 1.1rem;
   color: var(--muted);
+  line-height: 1.45;
 }
 
-.help-grid li { margin: 0.35rem 0; }
+.help-grid li { margin: 0.28rem 0; }
 
 .fb-embed {
   border: 1px solid #374459;
@@ -214,6 +229,9 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  position: sticky;
+  top: 1rem;
+  align-self: start;
 }
 
 .fb-side h3 {
@@ -224,6 +242,23 @@ h2 {
 .fb-side p {
   margin: 0 0 0.3rem;
   color: var(--muted);
+}
+
+.fb-side h4 {
+  margin: 0.2rem 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #e7eefb;
+}
+
+.fb-side ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.fb-side li {
+  margin: 0.2rem 0;
 }
 
 footer {
@@ -239,6 +274,10 @@ footer {
   .help-grid { grid-template-columns: 1fr 1fr; }
 
   .facebook-layout { grid-template-columns: 1fr; }
+
+  .fb-side {
+    position: static;
+  }
 }
 
 @media (max-width: 720px) {
