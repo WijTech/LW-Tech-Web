@@ -104,10 +104,17 @@ h1 {
 }
 
 .icon {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
   color: #eef4ff;
+}
+
+.icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .service-icons h3 {
@@ -190,7 +197,33 @@ h2 {
   border-radius: 14px;
   overflow: hidden;
   background: #0a121f;
-  margin-bottom: 0.9rem;
+}
+
+.facebook-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 0.9rem;
+  align-items: stretch;
+}
+
+.fb-side {
+  border: 1px solid #374459;
+  border-radius: 14px;
+  padding: 1rem;
+  background: rgba(14, 19, 30, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.fb-side h3 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fb-side p {
+  margin: 0 0 0.3rem;
+  color: var(--muted);
 }
 
 footer {
@@ -204,6 +237,8 @@ footer {
 @media (max-width: 980px) {
   .service-icons,
   .help-grid { grid-template-columns: 1fr 1fr; }
+
+  .facebook-layout { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {
