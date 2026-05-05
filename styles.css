@@ -136,6 +136,12 @@ h1 {
 
 .hero-cta-wrap { margin-top: 1rem; }
 
+.cta-note {
+  margin: 0.45rem 0 0;
+  color: #9eabc0;
+  font-size: 0.92rem;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
