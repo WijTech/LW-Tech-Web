@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #06080c;
   --bg-soft: #0d1117;
   --panel: #121822;
@@ -137,7 +137,7 @@ h1 {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem 1.25rem 4rem;
+  padding: 1rem 1.25rem 5rem;
 }
 
 section {
@@ -160,6 +160,7 @@ h2 {
   border-radius: 14px;
   padding: 1rem;
   background: linear-gradient(160deg, rgba(20, 27, 38, 0.9), rgba(10, 14, 22, 0.95));
+  cursor: default;
 }
 
 .card h3 {
@@ -171,10 +172,29 @@ h2 {
   color: var(--muted);
 }
 
+.areas,
+.contact,
+.latest-post {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.2rem;
+  background: rgba(13, 18, 27, 0.8);
+}
+
+.areas p,
+.latest-post p,
+.latest-post small,
+.contact p,
+.contact small {
+  color: var(--muted);
+}
+
+.area-list,
 .why {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 0.7rem;
+  margin-top: 1rem;
 }
 
 .chip {
@@ -186,36 +206,12 @@ h2 {
   background: rgba(17, 23, 33, 0.7);
 }
 
-.contact {
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 1.2rem;
-  background: rgba(13, 18, 27, 0.8);
+.post-fallback {
+  margin-top: 0.8rem;
 }
 
-.latest-post {
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 1.2rem;
-  background: rgba(13, 18, 27, 0.8);
-}
-
-.latest-post p,
-.latest-post small {
-  color: var(--muted);
-}
-
-.post-frame {
-  margin-top: 1rem;
-  border: 1px solid #2a364a;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #0d1117;
-}
-
-.contact p,
-.contact small {
-  color: var(--muted);
+.mobile-cta {
+  display: none;
 }
 
 footer {
@@ -225,7 +221,7 @@ footer {
   border-top: 1px solid #182131;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -234,5 +230,22 @@ footer {
 
   h1 {
     font-size: 2rem;
+  }
+
+  .mobile-cta {
+    display: block;
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 0.9rem 1rem;
+    text-align: center;
+    border-radius: 999px;
+    text-decoration: none;
+    background: linear-gradient(120deg, #1692b5, #21d4ff);
+    color: #051018;
+    font-weight: 700;
+    z-index: 50;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
   }
 }
