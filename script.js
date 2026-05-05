@@ -7,9 +7,9 @@ function resizeFacebookEmbed() {
   const current = new URL(iframe.src);
   const isMobile = window.innerWidth <= 720;
   const targetWidth = isMobile
-    ? Math.max(280, Math.min(420, window.innerWidth - 48))
+    ? Math.max(180, Math.min(320, window.innerWidth - 72))
     : 500;
-  const targetHeight = isMobile ? 620 : 700;
+  const targetHeight = isMobile ? 700 : 700;
 
   if (
     current.searchParams.get("width") === String(targetWidth) &&
