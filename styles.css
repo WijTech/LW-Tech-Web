@@ -66,6 +66,17 @@ body {
   background: transparent;
 }
 
+.brand-ring {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
 .brand-name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
